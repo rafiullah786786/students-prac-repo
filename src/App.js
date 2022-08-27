@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Parent from "./component/child-to-parent/Parent";
 import ClassComponent from "./component/classComponent/ClassComponent";
 import Header from "./component/header/Header";
 import Products from "./component/products/Products";
@@ -31,8 +32,9 @@ const data = [
 function App() {
   return (
     <div>
-      <Products data={data} />
-      <Button btnName="Click me">Click Me</Button>
+      {/* <Products data={data} />
+      <Button btnName="Click me">Click Me</Button> */}
+      <Parent />
     </div>
   );
 }
