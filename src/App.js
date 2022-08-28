@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import Parent from "./component/child-to-parent/Parent";
 import ClassComponent from "./component/classComponent/ClassComponent";
+import Counter from "./component/counter/Counter";
+import Form from "./component/form/Form";
 import Header from "./component/header/Header";
 import Products from "./component/products/Products";
 import Button from "./component/UI/Button";
@@ -34,7 +36,9 @@ function App() {
     <div>
       {/* <Products data={data} />
       <Button btnName="Click me">Click Me</Button> */}
-      <Parent />
+      {/* <Parent /> */}
+      {/* <Counter /> */}
+      <Form />
     </div>
   );
 }
