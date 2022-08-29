@@ -8,7 +8,7 @@ function Products(props) {
         return (
           <div id="container">
             <div className="product-details">
-              <h1>{item.name}</h1>
+              <h1>{item.title}</h1>
               <span className="hint-star star">
                 <i className="fa fa-star" aria-hidden="true"></i>
                 <i className="fa fa-star" aria-hidden="true"></i>
@@ -17,10 +17,10 @@ function Products(props) {
                 <i className="fa fa-star-o" aria-hidden="true"></i>
               </span>
 
-              <p className="information">{item.disc}</p>
+              <p className="information">{item.description}</p>
 
               <div className="control">
-                <button className="btn">
+                <button className="btnProduct">
                   <span className="price">{item.price}</span>
                   <span className="shopping-cart">
                     <i className="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -31,10 +31,7 @@ function Products(props) {
             </div>
 
             <div className="product-image">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043"
-                alt=""
-              />
+              <img src={item.image} alt="" />
 
               <div className="info">
                 <h2> Description</h2>
